@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=bum_19loj9A
+
+Data Structure = different ways of storing data on your computer
+
+Lists can be used to store information about how to get from point A to B. There are different lists too for this task like using Arrays or HashMap or linked list or sortedlist or whatever.
+
+Algorithims: the set of instructions to execute the data structure. The set of instructions that will take you to the right address. Using HashMap or Arrays or something else may make an algo more efficient or faster.
+
+Every type of lists have advantages and disadvantages.So depending on what you do, you should use different lists.
