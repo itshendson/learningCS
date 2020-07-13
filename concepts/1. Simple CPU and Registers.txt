@@ -9,5 +9,16 @@ There is also a third input, called F. F is a number that selects one of several
 
 Clock - Determines when a circuit executes. Clocks have ticks (usually the rising edge) that goes from low to high repeatedly at a frequency. There are many signals/inputs that goes to the circuit. We don't want these signals/inputs to be executed randomly. The clock regulates that to ensure there is order and sequence to these signals/inputs.  
 
-Still Don't have a clear idea what a Register is other than it is apparently storage that is accessed by the CPU.
+Memory - Short term storage. Data is wiped when computer shuts off (eg. RAM). Memory can be thought of as a long tape of bytes. Each byte has an address. The address is just an integer (eg. 132)
 
+Storage - Persistent storage of data that exists even after computer is turned off (eg. writing on discs, hard drive, SSDs)
+
+---
+
+Bit is a 1 or 0. Every integers (eg. 1, 238, -71, etc) can be represented by 32 bits.
+
+Byes is 8 bits. Since it takes 32 bits to represent an integer and it takes 8 bits to represent a byte. An integer also represents 4 bytes. 
+
+Array of Integers - if you have an array of length 3, you basically need 3 bytes stored in memory. 
+
+Converting Integers to Binary
