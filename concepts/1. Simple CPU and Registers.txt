@@ -22,3 +22,10 @@ Byes is 8 bits. Since it takes 32 bits to represent an integer and it takes 8 bi
 Array of Integers - if you have an array of length 3, you basically need 3 bytes stored in memory. 
 
 Converting Integers to Binary
+
+---
+
+Arithmetic and Logic Unit (ALU) - has 2 inputs, an operation code, an output (with a destination), and an immediate value (aka the value that is not currently in the register). 
+
+A sequential circuit is basically an ALU + register?
+

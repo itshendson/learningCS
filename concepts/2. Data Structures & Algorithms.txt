@@ -21,3 +21,9 @@ Hash Table - Called "Dictionary" in Python. Key runs through hasing function whi
 Stack/Queue - Stask is last in, first out structure. Great for Depth First Search. Queue is first in, first out. Efficient for add + removal but limited use case.
 
 Graphs + Tree - Nodes have pointers like linked list but they're called edges. Edges can have weights. Trees have parents and children(s). Binary search trees can only have 2 children per parent. The "children" is called left or right. 
+
+How to find Big O Notation: Take the mathematical equation (eg. T = 1 or y = mx + b or ax^2 + bx + c). Find the largest term (For y = mx + b it is mx) then remove the coefficient.
+
+Constant: T = 1 becomes O(1)
+Linear: y=mx+b becomes O(x)
+Quadratic: ax^2 + bx + c becomes O(x^2)
