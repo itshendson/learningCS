@@ -57,3 +57,68 @@ The compiler basically converts high level language to machine code.
 
 In C, malloc() is used to allocate memory from heap to your array of memory. 
 
+---
+
+In Java, all arrays are allocated dynamically.
+
+public class Foo {
+	static int a;
+	static int b[] = new int[10];
+
+The compiler allocates memory as soon as this line executes: int b[] = new int[10];
+
+The compiler does not know the address of a dynamic array. BUT it does know the address of b and b contains the address/reference of the aray. b stores a reference to the array. 
+
+--- 
+
+Instance variable are also called non-static variable. Static variables do not differ with the object. Non-static (Instance) variable can differ with the object. An example could be that you have class Dog and an instance variable could be age because age differs with the instance of dog. You do not need to declare "static" when declaring an instance variable.
+
+int a <-- because the word "static" isn't declared, this is an instance variable
+static int b <-- because the word "static" is here, this is a static variable
+
+A static variable example could be numberOfLegs because all instance of dogs will have 4 legs no matter the instance. 
+
+Local variable are variables declared inside a method. As long as the method is running, the local variable exists, as soon as the method is done, the local variable will have been deallocated.
+
+---
+
+Memory and types of variables:
+
+Static Variables: The compiler knows exactly where in memory a static variable is located.
+
+Instance Variables: Instance variables are dynamic variables (to be dynamic means that its address and values is only known during runtime). Although the compiler may not know the address of an instance variable, it does know the object that contains it. And if the compiler knows the address of the object, it can perform an offset to find the instance variable. 
+
+---
+
+Deallocation:
+
+Deallocation is important for efficient use of memory. 
+
+In C, free is a method that frees the memory immediately
+.
+A dangling pointer is a pointer that points to an address that has been freed. This is dangerous because a variable could still be pointing to the freed memory. The solution is that after you freed an address, you should re initialize the variable. 
+
+In Java, objects are deallocated implicitly. A garbage collector runs periodically to deallocate unreachable objects. Hence, there is no worry of a dangling pointer. 
+
+In Java, "new" allocates memory for an object in a heap space
+Dog d1 = new Dog("Joey")
+Dog d2 = new Dog("Snoopy")
+
+Next, if we write:
+d2 = new("Draco")
+System.out.println(d2)
+
+This will print out "Draco" and not "Snoopy" because a garbage collector went and freed d2 from having a value of Snoopy.
+
+Garbage Collection: automatically frees memory. 
+
+Memory leak happens when the garbage collector fails to deallocate memory.
+
+
+
+
+
+
+
+
+
