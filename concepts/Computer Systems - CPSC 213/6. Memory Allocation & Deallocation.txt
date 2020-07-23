@@ -26,7 +26,12 @@ Starts with method is called and vanishes when method ends. Allocation and deall
 
 Heap memory is for dynamic allocation of memory. Heap memory size can vary, unlike Stack which is fixed. 
 
+Example:
+Car myCar = new Car()
+"myCar" is called a reference variable. When the above code is ran, an object Car() is created in the Heap Memory. myCar is stored in the Stack Memory with an address that points to the object it just created in the Heap Memory.
 
+Note that if later on we execute:
+myCar = new Car() again, myCar will be pointing to a new different object (and with a new address). The old Car() object is no longer reachable (hence we need Garbage Collector to remove the old object.)
 
 
 
@@ -39,6 +44,11 @@ When the very top function gets ran, it is deleted from the stack, then the func
 Before a thread is ran (or a procedure starts), there is a hidden procedure.
 The hidden procedure allocates memory for stack, initializes the stack pointer, and calls main()
 When a procedure ends, deallocation happens.
+
+
+
+---Garbage Collection:
+In Java, automatically looks for unreachable objects and free them from memory. In C this is an actual procedure/code you have to run.
 
 
 
