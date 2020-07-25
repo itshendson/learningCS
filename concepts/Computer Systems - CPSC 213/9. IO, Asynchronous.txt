@@ -24,6 +24,7 @@ The data transfer rate of the I/O is much slower than the CPU. Don't want the CP
 
 
 ---Asynchronous I/O 
+
 Synchronous I/O: The reading function returns only when I/O operation is completed.
 Example: Client makes a call to server. Client WAITS until message is received before doing anything else. The client cannot do anything else while waiting.
 
