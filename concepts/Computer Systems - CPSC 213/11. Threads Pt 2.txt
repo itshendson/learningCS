@@ -58,5 +58,6 @@ public synchronized void method() {
 
 
 
-
-
+---Deadlock
+• A condition where two or more threads are forever blocked waiting for each other.
+• Caused by the synchronized keyword when multiple threads need the same lock but obtain them in different orders. 

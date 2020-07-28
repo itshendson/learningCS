@@ -5,7 +5,7 @@ from lone_sum import lone_sum
 from sum67 import sum67
 from factorial_fibonacci_recursion import *
 
-#count_hi("testhi")
+count_hi("hihihihihi")
 
 #cat_dog("sdfcatsdfdog")
 
@@ -17,7 +17,7 @@ from factorial_fibonacci_recursion import *
 
 #fact(4)
 
-print(fib(6))
+#print(fib(6))
 
 
 
