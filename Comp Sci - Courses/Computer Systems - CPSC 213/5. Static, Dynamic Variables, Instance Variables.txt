@@ -28,7 +28,7 @@ The compiler does not know the address of a dynamic array. BUT it does know the 
 
 ---
 
-Instance variable are also called non-static variable. Static variables do not differ with the object. Non-static (Instance) variable can differ with the object. An example could be that you have class Dog and an instance variable could be age because age differs with the instance of dog. You do not need to declare "static" when declaring an instance variable.
+Instance variable are also called non-static variable. Static variables do not change with the object. Non-static (Instance) variable can change with the instance of an object. An example could be that you have class Dog and an instance variable could be age because age differs with the instance of dog. You do not need to declare "static" when declaring an instance variable.
 
 int a <-- because the word "static" isn't declared, this is an instance variable
 static int b <-- because the word "static" is here, this is a static variable
