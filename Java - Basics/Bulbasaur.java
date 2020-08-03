@@ -2,8 +2,8 @@ package learningJava;
 
 public class Bulbasaur {
 
-    private String name; //Best Practice: It's better to use private so that you don't accidentally let other class use this variable.
-    private int age;
+    protected String name; //Best Practice: It's better to use private so that you don't accidentally let other class use this variable.
+    protected int age;
     private static String type;
 
     public Bulbasaur(String name, int age) {
