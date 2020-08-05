@@ -1,19 +1,14 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
 
-       System.out.println("Input Integer ");
-       long input1 = sc.nextLong();
+        String s1 = stringExercise.parseString("<<>>", "word");
+        System.out.println(s1);
 
-       int sum = 0;
-       while (input1 > 0) {
-           sum += input1 % 10;
-           input1 /= 10;
-       }
+        String s2 = stringExercise.makeTags("i", "word");
+        System.out.println(s2);
 
-       System.out.println(sum);
+        
     }
+
 }
