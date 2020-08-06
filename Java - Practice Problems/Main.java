@@ -8,7 +8,12 @@ public class Main {
         String s2 = stringExercise.makeTags("i", "word");
         System.out.println(s2);
 
-        
+        String s3 = stringExercise.withoutX2("xxwhy");
+        System.out.println(s3);
+
+        int[] tempArray = {1,2,3};
+        int[] a1 = arrayExercise.fix23(tempArray);
+        System.out.println(a1);
     }
 
 }

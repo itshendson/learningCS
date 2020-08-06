@@ -14,5 +14,32 @@ public class stringExercise {
         return "<" + tag + ">" + word + "</" + tag + ">";
     }
 
+    //Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged.
+    //This is a little harder than it looks.
+    //withoutX2("xHi") → "Hi"
+    //withoutX2("Hxi") → "Hi"
+    //withoutX2("Hi") → "Hi"
+    public static String withoutX2(String str) {
+        String word = "";
+        char[] chars = str.toCharArray();
+        int count = 0;
+
+        for (char c : chars) {
+            if (count < 2) {
+                if (!String.valueOf(c).equals("x")) {
+                    word += String.valueOf(c);
+                    count++;
+                } else {
+                    count++;
+                    continue;
+                }
+            }
+            else {
+                word += String.valueOf(c);
+            }
+        }
+        return word;
+    }
+
 
 }
