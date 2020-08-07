@@ -1,8 +1,0 @@
-• Data Abstraction
-- Putting the "wires" of a machine inside a black box to hide them 
-- We only need need to know the inputs and outputs of said black box
-- As long as we know the specifications (inputs/outputs/parameters/method signature) of a black box, we can connect it to other systems
-- The other systems will still work despite the fact it doesn't know whats inside the black box
-- This enables "modularity" and all its benefits (ie. easily isolating a problematic system, easily replacing the broken module, if a module break it won't break the entire system)
-- https://www.youtube.com/watch?v=L1-zCdrx8Lk
-
