@@ -1,0 +1,6 @@
+- The compiler first checks the subclass for a method. If none are found, it goes to the superclass
+
+Animal aAnimal = new Mammal();
+
+Apparent Types: the declared type (above example is Animal)
+Actual Types: refers to the type of the object assigned to a variable (above example would be Mammal) 
