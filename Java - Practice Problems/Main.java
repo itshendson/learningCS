@@ -20,12 +20,11 @@ public class Main {
         int a2 = arrayExercise.start1(a2Array, a22Array);
         System.out.println("Q5: " + a2);
 
-        int l1a = 1;
-        int l1b = 2;
-        int l1c = 3;
-        int l1 = logicExercise.loneSum(l1a, l1b, l1c);
+        int l1 = logicExercise.loneSum(1, 2, 3);
         System.out.println("Q6: " + l1);
 
+        int l2 = logicExercise.noTeenSum(2, 15, 2);
+        System.out.println("Q7: " + l2);
     }
 }
 
