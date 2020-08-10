@@ -41,5 +41,26 @@ public class stringExercise {
         return word;
     }
 
+//    Given a string, count the number of words ending in 'y' or 'z' -- so the 'y' in "heavy" and the 'z' in "fez" count, but not the 'y' in "yellow".
+//    countYZ("fez day") → 2
+//    countYZ("day fez") → 2
+//    countYZ("day fyyyz") → 2
+    public static int countYZ(String str) {
+        String[] words;
+        int count = 0;
+
+        words = str.split(" ");
+        for (String word: words) {
+            if (word.substring(word.length()-1).toLowerCase().equals("y") || word.substring(word.length()-1).toLowerCase().equals("z")) {
+                count++;
+            } else {
+                ;
+            }
+        }
+        return count;
+    }
+
+
+
 
 }

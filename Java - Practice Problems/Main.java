@@ -25,6 +25,15 @@ public class Main {
 
         int l2 = logicExercise.noTeenSum(2, 15, 2);
         System.out.println("Q7: " + l2);
+
+        int s4 = stringExercise.countYZ("fez day");
+        System.out.println("Q7: " + s4);
+
+        int[] r1Array = {1, 3, 2};
+        boolean r1 = randomQ.scoresIncreasing(r1Array);
+        System.out.println("Q8: " + r1);
+
+
     }
 }
 
