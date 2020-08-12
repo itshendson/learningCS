@@ -1,0 +1,10 @@
+• Robustness - Best practice in which software that performs properly under a variety of situations. 
+
+• Robustness Gone Wrong
+- Consider an example of robustness done wrong
+- Imagine we want a method that takes in parameters years, months, and day and returns how many days we are into the year
+- If we wanted to make this method robust, we may have to consider what happens if the parameter is 0, or -1, or -2, etc. etc.
+- There are too many possibilities
+
+- A better approach is to separate normal and exceptional conditions. Whenever an operation terminates abnormally, get the compiler to throw an exception.
+

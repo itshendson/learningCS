@@ -38,3 +38,11 @@ Animal aAnimal = new Mammal();
 • Assert Command
 - If Pre-Conditions not met, throw an AssertException
 - assert BooleanCondition;
+
+
+
+• Weakening the Precondition, Strengthening the Postcondition
+- You want the subclass to have a weaker precondition than the superclass.
+- Weaker means to have less requirements
+
+- You want the subclass to have a stronger postcondition than the superclass.
