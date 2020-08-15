@@ -24,3 +24,18 @@
 • Final
 - The variable can't be changed
 
+• Interface
+- Only contains constants and method signatures
+- The subclass must implement ALL methods in the Interface Class
+- Interfaces can't be instantiated
+
+• Inheritance
+- A subclass inherits whatever methods and variables the superclass has
+- Constructors in superclass cannot be inherited by subclass
+
+• Abstract Class
+- Cannot create new instances of Abstract Class
+- Purpose is to serve as a base for subclasses
+- Can have both abstract methods (only have method signature, no body) and non abstract methods
+- Subclasses must IMPLEMENT the abstract methods
+- Subclasses will inherit the non abstract methods

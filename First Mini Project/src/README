@@ -1,0 +1,43 @@
+The purpose of this mini project is to practice the things that I have learned so far. The concepts I want to practice are:
+- Abstract Class (extends)
+- Interface (implements)
+- Data Abstraction
+- Mutability best practice
+- Objects
+- Weakening the the pre-condition
+- Strengthening the post-condition
+- helper
+
+
+Ideas:
+- Microwave?
+- Pokemon?
+- Stormtroopers? (too esoteric)
+- Social Media engagements (likes, shares)
+- Animals (already overdone)
+- Banking (savings, chequing, investment)
+- Shops inside video games
+- Cars
+
+
+Step 1: Abstracting vehicles:
+
+• Types of vehicles?
+sedans, motorcycle, plane, boat, truck
+
+• Properties of vehicles
+wheels, fuel, doors, weight, engine, hauling capacity, seats, medium of travel (eg. water, land, air), brand, acceleration, tank capacity, color, brand,
+
+• Properties unique to sedan
+4 doors, 5 seats, medium of travel,
+
+• Properties unique to motorcycle
+
+• Properties unique to plane
+
+• Properties unique to boat
+
+• Properties unique to truck
+
+
+
