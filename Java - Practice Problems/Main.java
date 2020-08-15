@@ -33,7 +33,9 @@ public class Main {
         boolean r1 = randomQ.scoresIncreasing(r1Array);
         System.out.println("Q8: " + r1);
 
-
+        int[] r2Array = {3, 4, 6};
+        boolean r2 = randomQ.scoresClump(r2Array);
+        System.out.println("Q9: " + r2);
     }
 }
 

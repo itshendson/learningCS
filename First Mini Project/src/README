@@ -9,35 +9,9 @@ The purpose of this mini project is to practice the things that I have learned s
 - helper
 
 
-Ideas:
-- Microwave?
-- Pokemon?
-- Stormtroopers? (too esoteric)
-- Social Media engagements (likes, shares)
-- Animals (already overdone)
-- Banking (savings, chequing, investment)
-- Shops inside video games
-- Cars
+I am abstracting the Bank of Montreal's product lines. The Bank of Montreal have several products including a chequing account, savings, accounts, investment accounts, and more.
 
 
-Step 1: Abstracting vehicles:
-
-• Types of vehicles?
-sedans, motorcycle, plane, boat, truck
-
-• Properties of vehicles
-wheels, fuel, doors, weight, engine, hauling capacity, seats, medium of travel (eg. water, land, air), brand, acceleration, tank capacity, color, brand,
-
-• Properties unique to sedan
-4 doors, 5 seats, medium of travel,
-
-• Properties unique to motorcycle
-
-• Properties unique to plane
-
-• Properties unique to boat
-
-• Properties unique to truck
 
 
 
