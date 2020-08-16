@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f6b3cc8-fb9b-4ae9-94da-2310d9e2b610" name="Default Changelist" comment="" />
+    <list default="true" id="dc348524-7024-43ee-bc34-4f0cef4c92bf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,22 +10,14 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectId" id="1g1COsscTMlvCgnPH3Zyu1oXmiZ" />
+  <component name="ProjectId" id="1gAIXw4CjOEc45SbId1F4VQVJlG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java - Basics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -68,22 +60,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f6b3cc8-fb9b-4ae9-94da-2310d9e2b610" name="Default Changelist" comment="" />
-      <created>1597272683558</created>
+      <changelist id="dc348524-7024-43ee-bc34-4f0cef4c92bf" name="Default Changelist" comment="" />
+      <created>1597551013111</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1597272683558</updated>
+      <updated>1597551013111</updated>
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="785" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597272716691">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="785" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1597272716691" />
-    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1597551011251">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1597551011251" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
 </project>
