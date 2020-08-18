@@ -3,26 +3,34 @@ package AccountTest;
 import Account.HISA;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class AccountTest {
 
+    private HISA myTestAccount;
+
     @Before
     public void runBefore() {
-        HISA myAccount = new HISA("Savings", 5000);
+        myTestAccount = new HISA("Savings", 5000);
     }
 
     @Test
     public void testDeposit() {
-        //TODO
+        assertEquals(6000, myTestAccount.deposit(1000), 0);
     }
 
     @Test
     public void testWithdraw() {
-        //TODO
+        assertEquals(2000, myTestAccount.withdraw(3000), 0);
+    }
+
+    @Test
+    public void testGetBalance() {
+        assertEquals(5000, myTestAccount.getBalance(), 0);
     }
 
     @Test
     public void testWithdrawLimit() {
-        //TODO
+        assertEquals(5000, myTestAccount.withdraw(6000), 0);
     }
 }

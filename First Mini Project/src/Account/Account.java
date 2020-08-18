@@ -30,8 +30,7 @@ public abstract class Account {
      * EFFECT: returns new balance
      */
     public double deposit(double amount) {
-        balance += amount;
-        return balance;
+        return balance += amount;
     }
 
     /**
@@ -41,9 +40,11 @@ public abstract class Account {
      * EFFECT: balance decrease by amount
      */
     public double withdraw(double amount) {
-        balance -= amount;
-        maxNumOfDepositsPerMonth -= 1;
-        return balance;
+        if (amount > balance) {
+            System.out.println("Can't withdraw more than balance!");
+        } else {
+            return balance -= amount;
+        } return balance;
     }
 
     /*
