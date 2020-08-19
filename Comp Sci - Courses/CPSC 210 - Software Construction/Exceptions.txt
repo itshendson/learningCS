@@ -1,6 +1,14 @@
+• Exception
+- An event that interrupts the flow
+
+• Class Hierarchy
+- Throwable is the root class of every error and exception
+
 • Checked Exceptions
-- A Checked exception are ones that are thrown in a method that must either be caught and handled within the method, or 
-the method must declare that it can throw the checked exception
+- Represents a potential problem that the user knows can happen...
+- so you declare the exception in the method signature and create a handling policy at compile time.
+- Checked Exceptions must declare the exception type in the method signature
+- If the exception is declared but not handled in a method, the exception goes back to the caller of the method
 
 - Example:
 public int nthDayInYear(int year, int monoth, int day) throws IllegalValueException {
@@ -8,9 +16,22 @@ public int nthDayInYear(int year, int monoth, int day) throws IllegalValueExcept
 		throw new IllegalValueException("Year is <=0");
 	...
 
+
+
 • Runtime (Unchecked) Exceptions
+- Represents an unexpected problem at runtime (eg. nullpointerexception, illegalargumentexception)
 - An exceptional condition that may occur anywhere in the program (eg. Java ran out of memory). 
 - Unlike checked exceptions, the method need not declare it can throw an unchecked exception.
+
+- Example:
+public BankAccount(String owner, int amount) {
+	if (amount < 0) {
+		throw new RuntimeException("Cannot create account with negative balance")
+	}
+	...
+
+- The above method will not throw an error until the program is RUNNING. 
+
 
 
 • User-defined Exceptions
