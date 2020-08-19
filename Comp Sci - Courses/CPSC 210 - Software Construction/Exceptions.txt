@@ -1,0 +1,17 @@
+• Checked Exceptions
+- A Checked exception are ones that are thrown in a method that must either be caught and handled within the method, or 
+the method must declare that it can throw the checked exception
+
+- Example:
+public int nthDayInYear(int year, int monoth, int day) throws IllegalValueException {
+	if (year <= 0) {
+		throw new IllegalValueException("Year is <=0");
+	...
+
+• Runtime (Unchecked) Exceptions
+- An exceptional condition that may occur anywhere in the program (eg. Java ran out of memory). 
+- Unlike checked exceptions, the method need not declare it can throw an unchecked exception.
+
+
+• User-defined Exceptions
+- You can define your own exceptions by extending a class to either Exception or RuntimeException

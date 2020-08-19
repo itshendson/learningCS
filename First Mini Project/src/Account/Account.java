@@ -41,10 +41,10 @@ public abstract class Account {
      */
     public double withdraw(double amount) {
         if (amount > balance) {
-            System.out.println("Can't withdraw more than balance!");
+            throw new IllegalArgumentException("Amount withdrawn can't be greater than bank account!");
         } else {
             return balance -= amount;
-        } return balance;
+        }
     }
 
     /*

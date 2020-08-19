@@ -3,7 +3,9 @@ package AccountTest;
 import Account.HISA;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
 
 public class AccountTest {
 
@@ -31,6 +33,6 @@ public class AccountTest {
 
     @Test
     public void testWithdrawLimit() {
-        assertEquals(5000, myTestAccount.withdraw(6000), 0);
+        assertThrows(5000, myTestAccount.withdraw(6000), 0);
     }
 }
