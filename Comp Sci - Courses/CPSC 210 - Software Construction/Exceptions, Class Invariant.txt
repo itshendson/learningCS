@@ -1,3 +1,6 @@
+• Robustness
+- Writing the specs and methods in a way that covers all values that could be passed to the operation
+
 • Exception
 - An event that interrupts the flow
 
@@ -36,3 +39,22 @@ public BankAccount(String owner, int amount) {
 
 • User-defined Exceptions
 - You can define your own exceptions by extending a class to either Exception or RuntimeException
+
+
+
+• Clss Invariant
+- Means what must always be true for an instance of a data abstraction
+- An invariant must hold hold before a method (operation) is executed on an object and after
+- In other words...the class invariant is added to the REQUIRES and EFFECTS clause
+
+- Example of Invariant could be a specification that says getTimesFed() is always greater than 0, before and after the operation executes
+class Animal {
+	
+	private void hasValidState() {
+		assert getTimesFed() >= 0;
+		// do stuff
+		assert getTimesFed() >= 0;
+	}
+}
+
+- This checks the invariant at the start and end of the methods
