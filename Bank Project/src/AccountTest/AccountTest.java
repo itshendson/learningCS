@@ -1,11 +1,11 @@
 package AccountTest;
 
 import Account.HISA;
+import Account.WithdrawLimitException;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
 
 public class AccountTest {
 
@@ -13,7 +13,7 @@ public class AccountTest {
 
     @Before
     public void runBefore() {
-        myTestAccount = new HISA("Savings", 5000);
+        myTestAccount = new HISA( 5000, 11111);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class AccountTest {
     }
 
     @Test
-    public void testWithdraw() {
+    public void testWithdraw() throws WithdrawLimitException {
         assertEquals(2000, myTestAccount.withdraw(3000), 0);
     }
 
@@ -32,7 +32,10 @@ public class AccountTest {
     }
 
     @Test
-    public void testWithdrawLimit() {
-        assertThrows(5000, myTestAccount.withdraw(6000), 0);
+    public void testWithdrawLimit() throws WithdrawLimitException {
+        assertEquals(5000, myTestAccount.withdraw(6000), 0);
     }
+
+
+
 }

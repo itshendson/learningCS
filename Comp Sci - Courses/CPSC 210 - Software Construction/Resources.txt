@@ -1,0 +1,7 @@
+FOB
+- User Defined Exceptions
+- Override equals
+- Override hashcode
+
+InterationAbstraction
+- Iterables
