@@ -1,5 +1,7 @@
 package Account;
 
+import Transaction.TransactionLog;
+
 import java.util.Objects;
 
 public abstract class Account {
@@ -19,6 +21,7 @@ public abstract class Account {
     public Account(double balance, int accountNumber) {
         this.balance = balance;
         this.accountNumber = accountNumber;
+        new TransactionLog();
     }
 
     /**
@@ -45,6 +48,7 @@ public abstract class Account {
      */
     public double deposit(double amount) {
         return balance += amount;
+        // TODO: finish this line. addTransaction(new Transaction("Deposit", amount));
     }
 
     /**

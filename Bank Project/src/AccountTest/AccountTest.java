@@ -6,10 +6,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class AccountTest {
 
     private HISA myTestAccount;
+    private HISA mySecondTestAccount;
 
     @Before
     public void runBefore() {
@@ -32,9 +34,30 @@ public class AccountTest {
     }
 
     @Test
-    public void testWithdrawLimit() throws WithdrawLimitException {
-        assertEquals(5000, myTestAccount.withdraw(6000), 0);
+    public void testWithdrawLimitException() {
+        boolean thrown = false;
+
+        try {
+            myTestAccount.withdraw(6000);
+        } catch (WithdrawLimitException e) {
+            thrown = true;
+        }
+
+        assertTrue(thrown);
     }
+
+    @Test
+    public void testSameAccount() {
+        mySecondTestAccount = new HISA( 6000, 11111);
+        assertTrue(myTestAccount.equals(mySecondTestAccount));
+    }
+
+    @Test
+    public void testDifferentAccount() {
+        mySecondTestAccount = new HISA( 5000, 11112);
+        assertTrue(!myTestAccount.equals(mySecondTestAccount));
+    }
+
 
 
 
