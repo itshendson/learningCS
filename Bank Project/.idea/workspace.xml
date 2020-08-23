@@ -38,7 +38,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest.testDifferentAccount">
+  <component name="RunManager" selected="JUnit.TransactionLogTest.addTransactions">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="WIDTH" value="400" />
@@ -52,7 +52,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testDifferentAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="First Project" />
       <extension name="coverage">
         <pattern>
@@ -62,75 +62,74 @@
       </extension>
       <option name="PACKAGE_NAME" value="AccountTest" />
       <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
-      <option name="METHOD_NAME" value="testDifferentAccount" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionLogTest.addTransactions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="First Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TransactionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TransactionTest" />
+      <option name="MAIN_CLASS_NAME" value="TransactionTest.TransactionLogTest" />
+      <option name="METHOD_NAME" value="addTransactions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionLogTest.getTransactions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="First Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AccountTest.*" />
+          <option name="PATTERN" value="TransactionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AccountTest" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
-      <option name="METHOD_NAME" value="testEquals" />
+      <option name="PACKAGE_NAME" value="TransactionTest" />
+      <option name="MAIN_CLASS_NAME" value="TransactionTest.TransactionLogTest" />
+      <option name="METHOD_NAME" value="getTransactions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testGetBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionLogTest.myTransactionLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="First Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AccountTest.*" />
+          <option name="PATTERN" value="TransactionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AccountTest" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
-      <option name="METHOD_NAME" value="testGetBalance" />
+      <option name="PACKAGE_NAME" value="TransactionTest" />
+      <option name="MAIN_CLASS_NAME" value="TransactionTest.TransactionLogTest" />
+      <option name="METHOD_NAME" value="myTransactionLog" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testSameAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionTest.getDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="First Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="AccountTest.*" />
+          <option name="PATTERN" value="TransactionTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="AccountTest" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
-      <option name="METHOD_NAME" value="testSameAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountTest.testWithdrawLimitException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="First Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AccountTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AccountTest" />
-      <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
-      <option name="METHOD_NAME" value="testWithdrawLimitException" />
+      <option name="PACKAGE_NAME" value="TransactionTest" />
+      <option name="MAIN_CLASS_NAME" value="TransactionTest.TransactionTest" />
+      <option name="METHOD_NAME" value="getDescription" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -155,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest.testDifferentAccount" />
-        <item itemvalue="JUnit.AccountTest.testGetBalance" />
-        <item itemvalue="JUnit.AccountTest.testSameAccount" />
-        <item itemvalue="JUnit.AccountTest.testEquals" />
-        <item itemvalue="JUnit.AccountTest.testWithdrawLimitException" />
+        <item itemvalue="JUnit.TransactionLogTest.addTransactions" />
+        <item itemvalue="JUnit.TransactionLogTest.getTransactions" />
+        <item itemvalue="JUnit.TransactionLogTest.myTransactionLog" />
+        <item itemvalue="JUnit.TransactionTest.getDescription" />
+        <item itemvalue="JUnit.AccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,30 +181,46 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="785" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1597272716691" />
-    <state x="830" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1598134914341">
+    <state x="830" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1598142937583">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="830" y="257" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598134914341" />
-    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1598133140691">
+    <state x="830" y="257" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598142937583" />
+    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1598143176239">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598133140691" />
-    <state width="2027" height="298" key="GridCell.Tab.0.bottom" timestamp="1598136742750">
+    <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598143176239" />
+    <state width="2027" height="298" key="GridCell.Tab.0.bottom" timestamp="1598148471251">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598136742750" />
-    <state width="2027" height="298" key="GridCell.Tab.0.center" timestamp="1598136742750">
+    <state width="2027" height="298" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
+    <state width="2027" height="298" key="GridCell.Tab.0.center" timestamp="1598148471251">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598136742750" />
-    <state width="2027" height="298" key="GridCell.Tab.0.left" timestamp="1598136742750">
+    <state width="2027" height="298" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
+    <state width="2027" height="298" key="GridCell.Tab.0.left" timestamp="1598148471251">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598136742750" />
-    <state width="2027" height="298" key="GridCell.Tab.0.right" timestamp="1598136742750">
+    <state width="2027" height="298" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
+    <state width="2027" height="298" key="GridCell.Tab.0.right" timestamp="1598148471251">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598136742750" />
+    <state width="2027" height="298" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
+    <state width="2027" height="367" key="GridCell.Tab.1.bottom" timestamp="1598147704290">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704290" />
+    <state width="2027" height="367" key="GridCell.Tab.1.center" timestamp="1598147704289">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704289" />
+    <state width="2027" height="367" key="GridCell.Tab.1.left" timestamp="1598147704289">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704289" />
+    <state width="2027" height="367" key="GridCell.Tab.1.right" timestamp="1598147704289">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2027" height="367" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704289" />
     <state x="533" y="201" key="SettingsEditor" timestamp="1597598587383">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -214,5 +229,19 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="754" y="448" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1597618471438" />
+    <state x="571" y="292" width="905" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598146620724">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="571" y="292" width="905" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598146620724" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

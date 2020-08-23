@@ -1,5 +1,6 @@
 package Account;
 
+import Transaction.Transaction;
 import Transaction.TransactionLog;
 
 import java.util.Objects;
@@ -7,9 +8,9 @@ import java.util.Objects;
 public abstract class Account {
 
     private double balance;
+    private TransactionLog TransactionLog;
 
     private final int accountNumber;
-    private final int accountNumLength = 5;
 
     /**
      * Constructor for account
@@ -39,28 +40,30 @@ public abstract class Account {
     public int getAccountNumber() {
         return accountNumber;
     }
+    
+    public TransactionLog getTransactionLog() {
+        return TransactionLog;
+    }
 
     /**
-     * Deposits money to account
-     * Requires: amount must be greater than 0
-     * Modifies: this
-     * Effect: returns new balance
+     * Deposits money to bank account
+     * Effect: returns new balance and add record to Transaction log
      */
     public double deposit(double amount) {
+        TransactionLog.addTransaction(new Transaction("Deposit", amount));
         return balance += amount;
-        // TODO: finish this line. addTransaction(new Transaction("Deposit", amount));
     }
 
     /**
      * Deposits money to account
      * Requires: deposited amount must be greater than 0. balance can not go below 0.
-     * Modifies: this
-     * Effect: balance decrease by amount
+     * Effect: balance decrease by amount and add record to Transaction log
      */
     public double withdraw(double amount) throws WithdrawLimitException{
         if (amount > balance) {
             throw new WithdrawLimitException();
         } else {
+            TransactionLog.addTransaction(new Transaction("Withdraw", amount));
             return balance -= amount;
         }
     }

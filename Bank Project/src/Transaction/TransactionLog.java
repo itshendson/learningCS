@@ -10,6 +10,10 @@ public class TransactionLog implements Iterable {
         transactions = new ArrayList<Transaction>();
     }
 
+    public Collection<Transaction> getTransactions() {
+        return transactions;
+    }
+
     public void addTransaction(Transaction t) {
         transactions.add(t);
     }
