@@ -38,7 +38,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
-  <component name="RunManager" selected="JUnit.TransactionLogTest.addTransactions">
+  <component name="RunManager" selected="JUnit.AccountTest.testDeposit">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="WIDTH" value="400" />
@@ -63,6 +63,40 @@
       <option name="PACKAGE_NAME" value="AccountTest" />
       <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.testDeposit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="First Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AccountTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AccountTest" />
+      <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
+      <option name="METHOD_NAME" value="testDeposit" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.testWithdraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="First Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AccountTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AccountTest" />
+      <option name="MAIN_CLASS_NAME" value="AccountTest.AccountTest" />
+      <option name="METHOD_NAME" value="testWithdraw" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,40 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionLogTest.myTransactionLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="First Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TransactionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TransactionTest" />
-      <option name="MAIN_CLASS_NAME" value="TransactionTest.TransactionLogTest" />
-      <option name="METHOD_NAME" value="myTransactionLog" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionTest.getDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="First Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TransactionTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="TransactionTest" />
-      <option name="MAIN_CLASS_NAME" value="TransactionTest.TransactionTest" />
-      <option name="METHOD_NAME" value="getDescription" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -154,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountTest.testDeposit" />
+        <item itemvalue="JUnit.AccountTest" />
+        <item itemvalue="JUnit.AccountTest.testWithdraw" />
         <item itemvalue="JUnit.TransactionLogTest.addTransactions" />
         <item itemvalue="JUnit.TransactionLogTest.getTransactions" />
-        <item itemvalue="JUnit.TransactionLogTest.myTransactionLog" />
-        <item itemvalue="JUnit.TransactionTest.getDescription" />
-        <item itemvalue="JUnit.AccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,38 +189,38 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598143176239" />
-    <state width="2027" height="298" key="GridCell.Tab.0.bottom" timestamp="1598148471251">
+    <state width="2027" height="298" key="GridCell.Tab.0.bottom" timestamp="1598164672283">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
-    <state width="2027" height="298" key="GridCell.Tab.0.center" timestamp="1598148471251">
+    <state width="2027" height="298" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598164672283" />
+    <state width="2027" height="298" key="GridCell.Tab.0.center" timestamp="1598164672282">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
-    <state width="2027" height="298" key="GridCell.Tab.0.left" timestamp="1598148471251">
+    <state width="2027" height="298" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598164672282" />
+    <state width="2027" height="298" key="GridCell.Tab.0.left" timestamp="1598164672282">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
-    <state width="2027" height="298" key="GridCell.Tab.0.right" timestamp="1598148471251">
+    <state width="2027" height="298" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598164672282" />
+    <state width="2027" height="298" key="GridCell.Tab.0.right" timestamp="1598164672282">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="298" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598148471251" />
-    <state width="2027" height="367" key="GridCell.Tab.1.bottom" timestamp="1598147704290">
+    <state width="2027" height="298" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598164672282" />
+    <state width="2027" height="336" key="GridCell.Tab.1.bottom" timestamp="1598161362485">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="367" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704290" />
-    <state width="2027" height="367" key="GridCell.Tab.1.center" timestamp="1598147704289">
+    <state width="2027" height="336" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598161362485" />
+    <state width="2027" height="336" key="GridCell.Tab.1.center" timestamp="1598161362485">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="367" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704289" />
-    <state width="2027" height="367" key="GridCell.Tab.1.left" timestamp="1598147704289">
+    <state width="2027" height="336" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598161362485" />
+    <state width="2027" height="336" key="GridCell.Tab.1.left" timestamp="1598161362485">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="367" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704289" />
-    <state width="2027" height="367" key="GridCell.Tab.1.right" timestamp="1598147704289">
+    <state width="2027" height="336" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598161362485" />
+    <state width="2027" height="336" key="GridCell.Tab.1.right" timestamp="1598161362485">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2027" height="367" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598147704289" />
+    <state width="2027" height="336" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598161362485" />
     <state x="533" y="201" key="SettingsEditor" timestamp="1597598587383">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

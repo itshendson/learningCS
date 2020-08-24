@@ -22,7 +22,7 @@ public abstract class Account {
     public Account(double balance, int accountNumber) {
         this.balance = balance;
         this.accountNumber = accountNumber;
-        new TransactionLog();
+        this.TransactionLog = new TransactionLog();
     }
 
     /**
