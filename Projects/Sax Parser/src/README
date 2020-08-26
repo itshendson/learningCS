@@ -1,0 +1,5 @@
+Goal: Practice reading Java documentation to create a simple parser for an XML file.
+
+Document used:
+https://docs.oracle.com/javase/tutorial/jaxp/sax/parsing.html
+https://www.w3resource.com/xml/declarations.php#:~:text=XML%20documents%20can%20contain%20an,optional%20encoding%20and%20standalone%20attributes.

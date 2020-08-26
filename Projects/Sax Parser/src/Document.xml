@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding='UTF-8'?>
+
+<Document>
+
+<!-- This is an example of a comment -->
+
+<Instrument type="Debt">
+   <Name>10 Year Treasury</Name>
+   <Close>110</Close>
+   <Denomination>USD</Denomination>
+   <Date>August 25 2020</Date>
+</Instrument>
+
+<Instrument type="Equity">
+    <Name>Amazon</Name>
+    <Close>3346.49</Close>
+    <Denomination>USD</Denomination>
+    <Date>August 25 2020</Date>
+</Instrument>
+
+<Instrument type="Commodities">
+    <Name>WTI Crude</Name>
+    <Close>42.34</Close>
+    <Denomination>USD</Denomination>
+    <Date>August 25 2020</Date>
+</Instrument>
+
+
+</Document>
