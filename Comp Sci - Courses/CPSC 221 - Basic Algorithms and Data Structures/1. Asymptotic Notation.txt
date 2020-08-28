@@ -1,0 +1,9 @@
+• How do we measure the space and time of an algorithm, given that different computers have different hardware?
+
+• Asymptotic Notation
+- What happens to speed/time of an algo as n approaches infinity.
+
+• Notations
+Big O = Upper Bound: n = O(n^2)
+Theta = Tight Bound: n < 3n < 5n: 3n is tightly bound between two bounds
+Omega = Lower Bound: n^3=o(log(n)):

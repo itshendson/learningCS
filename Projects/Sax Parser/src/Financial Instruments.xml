@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding='UTF-8'?>
 
-<Document>
+<Financial_Instruments>
 
 <!-- This is an example of a comment -->
 
@@ -26,4 +26,4 @@
 </Instrument>
 
 
-</Document>
+</Financial_Instruments>
