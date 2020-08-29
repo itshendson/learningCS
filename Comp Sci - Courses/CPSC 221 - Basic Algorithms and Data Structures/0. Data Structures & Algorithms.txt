@@ -18,7 +18,7 @@ Array - Continuous block of cell in the computer memory. Every block of cell has
 
 Hash Table - Called "Dictionary" in Python. Key runs through hasing function which then spits out an address. Memory address don't have to be next to each other like in array so you don't have size issue. Two keys can hash to the same memory location. This is called "collision." Good for add + remove and retrieval. Bad because collision can happen.
 
-Stack/Queue - Stask is last in, first out structure. Great for Depth First Search. Queue is first in, first out. Efficient for add + removal but limited use case.
+Stack/Queue - Stack is last in, first out structure. Great for Depth First Search. Queue is first in, first out. Efficient for add + removal but limited use case.
 
 Graphs + Tree - Nodes have pointers like linked list but they're called edges. Edges can have weights. Trees have parents and children(s). Binary search trees can only have 2 children per parent. The "children" is called left or right. 
 
