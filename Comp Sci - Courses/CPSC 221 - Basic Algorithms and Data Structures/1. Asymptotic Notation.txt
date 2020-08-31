@@ -31,8 +31,14 @@ Omega = Lower Bound: n^3=o(log(n))
 • Big-O
 - Big-O represents the worst case scenario/the upper bound of a function
 - It provides the "order of growth of the function"
-- If j(n) and g(n) are the two functions then f(n) = O(g(n))
+- If f(n) and g(n) are the two functions then f(n) = O(g(n))
 	If there exists constants c and n0 such that f(n) <= c.g(n), for all n >= n0
 - In other words O(g(n)) is the upper bound of f(n) if the assumptions hold up
+- In other words f(n) will never grow faster than O(g(n))
 - O(g(n)) is the worst case scenario for f(n)
+
 - GREAT simple math explanation: https://www.youtube.com/watch?v=_lO-qsfk_0Q&list=WL&index=20&t=80s
+- Good visual graph explanation: https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/02-analysis-203-1201.pdf
+- Great explanation of notations with code (eg. n^2 are nested for loops, n^3 are 3 layers of nested for loops, a print statement is just a constant)
+
+
