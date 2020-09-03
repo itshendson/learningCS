@@ -3,10 +3,11 @@ import java.util.ArrayList;
 public class InsertionSort {
 
     /**
-     * My attempt at creating an insertion sort algo.
-     * The problem with my algo is that it is O(n^3) due to the loops.
-     * I also created an ArrayList for sorted Array. This creates ANOTHER object in memory which is a waste of capacity.
-     * Could not get it my first try. I have a working solution...just couldn't compare reach the last index.
+     * Today's lecture was on insertion sort...I tried to create the algo myself before seeing what the lecture did.
+     * I almost got a working solution. I just had ONE last part I couldn't figure out in my allotted time.
+     *
+     * The problem with my algo is that it is O(n^2) due to the loops.
+     * I also created an ArrayList for sortedArray. This creates ANOTHER object in memory which is a waste of capacity.
      */
     public static ArrayList<Integer> insertionSort(int[] unsortedArray) {
         ArrayList<Integer> sortedArray = new ArrayList<Integer>();
