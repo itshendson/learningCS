@@ -25,6 +25,7 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
+
             if (minValue < unsortedList[i]) {
                 int temp = unsortedList[i];
                 unsortedList[i] = unsortedList[minIndex];
