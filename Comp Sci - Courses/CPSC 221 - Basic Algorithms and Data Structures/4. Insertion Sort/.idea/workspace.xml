@@ -27,7 +27,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/CPSC210/IntelliJ/Marked" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -93,6 +93,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599169743354">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="479" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599169743354" />
+    <state x="754" y="346" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599169737950">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="754" y="346" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1599169737950" />
     <state width="2027" height="322" key="GridCell.Tab.0.bottom" timestamp="1599113054388">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

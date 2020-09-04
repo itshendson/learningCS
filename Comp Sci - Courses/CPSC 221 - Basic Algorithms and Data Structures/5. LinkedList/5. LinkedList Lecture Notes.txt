@@ -1,0 +1,8 @@
+• Linked List
+- Each element is a node that contains 2 things: the value and an address that points to the next node
+- Unlike Insertion Sort and Selection Sort, LinkedList allows us to insert/delete data much faster
+- Nodes are created in dynamic memory
+- The last pointer in the linkedlist points to null. Node(7, null)
+- We can insert node at the back of list in O(1) time!
+- LinkedList requires more pointer 
+- Every node knows the previous and next node
