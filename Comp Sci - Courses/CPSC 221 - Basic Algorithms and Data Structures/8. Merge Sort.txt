@@ -1,0 +1,5 @@
+• Merge Sorting Structure
+- Efficient sorting algo "Divide and Conquer"
+- Repeatedly divide arrays in half until each subarray contains a single element
+- Then simply compare two single element array
+- Then merge copies the subarray halves into a temporary array
