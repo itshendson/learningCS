@@ -1,0 +1,21 @@
+• BST Structure
+- Left is always smaller than node
+- Right is always bigger than node
+- But the subtree's node should not exceed the root node
+
+• Performance
+- Other data structures like sorted arrays and ordered linkedlist have O(n)
+- However, BST have O(log n) for insertion, search, and removal, so much faster
+
+• Insertion Performance
+- To insert a new node at the correct place in the BST, must perform search algo
+- Search algo is essentially is the value which you are inserting, less than or greater than node
+- If value is less than node, go left
+- If value is greater than node, go right
+- Once you reach the bottom of the tree and it is null (ie. there is no leaf), you insert a new node with your value.
+- The cost of insertion is the same as the cost of search, O(height)
+
+
+https://www.youtube.com/watch?v=pYT9F8_LFTM&ab_channel=mycodeschool
+https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/14-bst1-203-1201.pdf
+
