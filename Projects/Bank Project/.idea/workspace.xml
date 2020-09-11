@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f6b3cc8-fb9b-4ae9-94da-2310d9e2b610" name="Default Changelist" comment="" />
+    <list default="true" id="2f6b3cc8-fb9b-4ae9-94da-2310d9e2b610" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Comp Sci - Courses/CPSC 221 - Basic Algorithms and Data Structures/10. Binary Search Tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Comp Sci - Courses/CPSC 221 - Basic Algorithms and Data Structures/10. Binary Search Tree.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1g1COsscTMlvCgnPH3Zyu1oXmiZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -176,6 +201,18 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="785" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597272716691">
       <screen x="0" y="0" width="2048" height="1112" />
@@ -185,10 +222,11 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="830" y="257" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598142937583" />
-    <state x="805" y="311" key="FileChooserDialogImpl" timestamp="1598143176239">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="1006" y="392" key="FileChooserDialogImpl" timestamp="1599783158099">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="805" y="311" key="FileChooserDialogImpl/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598143176239" />
+    <state x="1006" y="392" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1599783158099" />
     <state width="2027" height="298" key="GridCell.Tab.0.bottom" timestamp="1598164672283">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -221,10 +259,11 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2027" height="336" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1598161362485" />
-    <state x="533" y="201" key="SettingsEditor" timestamp="1597598587383">
-      <screen x="0" y="0" width="2048" height="1112" />
+    <state x="666" y="253" key="SettingsEditor" timestamp="1599783182650">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="533" y="201" key="SettingsEditor/0.0.2048.1112/2560.0.1920.1040@0.0.2048.1112" timestamp="1597598587383" />
+    <state x="666" y="253" key="SettingsEditor/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1599783182650" />
     <state x="754" y="448" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1597618471438">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

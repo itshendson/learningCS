@@ -15,7 +15,20 @@
 - Once you reach the bottom of the tree and it is null (ie. there is no leaf), you insert a new node with your value.
 - The cost of insertion is the same as the cost of search, O(height)
 
+• Removal 
+- More complicated than insertion
+- Case 1:
+	: Node to be removed has no child -> Must Assign null to parent node
+	: Node to be removed has one child -> Replace node with its subtree
+	: Node to be removed has two child -> Complicated!
+		: Look ahead to see if node is null before accessing its children
+		: Use findmax on left subtree (called predecessor) or findmin or right subtree (called successor) 
+		: to replace the node-to-be-deleted, then recursively do the remove on the subtree
+		: Does not matter if we run the delete on left or right side, after deletion, we still have a BST
+		: But shouldn't only delete from left side or only from right side. This will make tree lobsided
+		: Therefore, use randomizer to pick which side to delete
 
 https://www.youtube.com/watch?v=pYT9F8_LFTM&ab_channel=mycodeschool
 https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/14-bst1-203-1201.pdf
+https://www.youtube.com/watch?v=YywjJKrdecs&ab_channel=ShawnLupoli
 
