@@ -28,6 +28,16 @@
 		: But shouldn't only delete from left side or only from right side. This will make tree lobsided
 		: Therefore, use randomizer to pick which side to delete
 
+• Performance
+- All three operations (search, insert, delete) are O(height)
+
+• BBST Rotation
+- Unlike BST where the worst case scenario is O(n), BBST's worst case scenario is O(log(n))
+- A tree can keep itself balanced (BBST) and therefore have O(log(n)) is by doing Rotations
+
+
+
+
 https://www.youtube.com/watch?v=pYT9F8_LFTM&ab_channel=mycodeschool
 https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/14-bst1-203-1201.pdf
 https://www.youtube.com/watch?v=YywjJKrdecs&ab_channel=ShawnLupoli
