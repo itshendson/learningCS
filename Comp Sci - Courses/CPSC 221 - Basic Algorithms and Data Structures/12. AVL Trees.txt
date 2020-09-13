@@ -17,3 +17,11 @@ If a tree is imbalanced, rotate it to maintain the balanced property
 
 • AVL Trees
 - Insertion begins with ordinary BST insertion followed by rotations to maintain balance
+
+
+
+This video really solidified the ideas for rotation: https://www.youtube.com/watch?v=jDM6_TnYIqE&list=WL&index=6&t=255s&ab_channel=AbdulBari
+- His method is better, find imblanace by taking a node, find the number of edges for left, find the number of edges for right
+- Then subtract left edges by right edges. If the result is NOT -1, 0, 1 then THAT node is imbalanced
+- So now you know which node is imbalanced, from there you can do a rotation based on LLR, RRL, etc
+- You only need to rotate 3 nodes at a time, from the imbalanced node using the LLR-RRL method
