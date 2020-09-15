@@ -18,6 +18,12 @@ If a tree is imbalanced, rotate it to maintain the balanced property
 • AVL Trees
 - Insertion begins with ordinary BST insertion followed by rotations to maintain balance
 
+• Theorem:
+- The height of an AVL tree with n nodes is O(log n)
+- In other words, the more nodes/keys a tree has, the LESSER its height.
+- With more nodes, you can actually form a tree shape: https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/19-btree-203-1201.pdf
+
+
 
 
 This video really solidified the ideas for rotation: https://www.youtube.com/watch?v=jDM6_TnYIqE&list=WL&index=6&t=255s&ab_channel=AbdulBari
