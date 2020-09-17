@@ -28,13 +28,15 @@ https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/20-hash1-203-12
 
 • Load Factor
 - Since the more data you have, the more collision you have
-- Load Factor = Total number of items stored/ Size of the array
+- Load Factor = Total number of items stored / Size of the array
+- As the table fills, load factor increases (performance decreases as load factor increases)
 
-• Close Addressing
+• Separate Chaining/Close Addressing
 - Yet another method for dealing with Collisions
 - The index of an array actually points to a LinkedList
 - If another key has the same index of something that is already in the array, just add it to the next linkedlist
 - There are many more methods to deal with collisions
+- Primary clustering happens when there are too many gaps in between indexes that have values
 
 • Hash Table Properties
 - Fast: Access to tash tables and converting the key to a number should also be in constant time
@@ -49,3 +51,5 @@ https://www.students.cs.ubc.ca/~cs-221/2019W2/lectures/slides/GT/20-hash1-203-12
 - A simple and effective hash function is:
 	- Convert the key value to an integer, x
 	- h(x) = x mod tablesize    where tablesize is the first prime number larger than twice the size of the number of expected values
+
+
