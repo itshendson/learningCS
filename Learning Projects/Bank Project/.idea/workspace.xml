@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6b3cc8-fb9b-4ae9-94da-2310d9e2b610" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Comp Sci - Courses/CPSC 221 - Basic Algorithms and Data Structures/10. Binary Search Tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Comp Sci - Courses/CPSC 221 - Basic Algorithms and Data Structures/10. Binary Search Tree.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BST/src/BinaryTreeTest/BinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/BST.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/BST.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/src/BinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BST/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BST/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
