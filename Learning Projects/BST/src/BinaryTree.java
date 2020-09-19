@@ -1,3 +1,8 @@
+import org.junit.Test;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 // For this program, I tried to learn from the following:
 // https://www.youtube.com/watch?v=M6lYob8STMI&t=484s&ab_channel=DerekBanas     :       Didn't like how it didn't use recursion
 // https://www.baeldung.com/java-binary-tree        :       For the most part this was great but didn't like how the addNode methods not combined into one method
@@ -68,5 +73,13 @@ public class BinaryTree {
                 : searchTree(current.rightChild, value);
     }
 
+    @Test
+    public void testingNodes() {
+        BinaryTree testBST = createBST();
+
+        assertTrue(testBST.containsNode(6));
+        assertTrue(testBST.containsNode(4));
+        assertFalse(testBST.containsNode(1));
+    }
 
 }
