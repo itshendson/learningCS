@@ -10,9 +10,6 @@ public class BinaryTree {
 
     Node root;
 
-    public BinaryTree() {
-    }
-
     //This method starts the recursion from the root node
     public void addNode(int value) {
         root = addNode(root, value);
@@ -37,6 +34,7 @@ public class BinaryTree {
         return current;
     }
 
+    //creates a BST with prefilled values
     public BinaryTree createBST() {
         BinaryTree myBST = new BinaryTree();
 
@@ -51,12 +49,12 @@ public class BinaryTree {
         return myBST;
     }
 
-    //Method that starts search from root
+    //Method that starts search operation from root
     public boolean containsNode(int value) {
         return searchTree(root, value);
     }
 
-    //Method to actually search tree
+    //Method responsible for actually searching the tree
     private boolean searchTree(Node current, int value) {
         if (current == null) {
             System.out.println("Value not in BST");
@@ -78,8 +76,70 @@ public class BinaryTree {
         BinaryTree testBST = createBST();
 
         assertTrue(testBST.containsNode(6));
-        assertTrue(testBST.containsNode(4));
+        assertTrue(testBST.containsNode(9));
         assertFalse(testBST.containsNode(1));
+        testBST.addNode(1);
+        assertTrue(testBST.containsNode(1));
+    }
+
+    //Delete Node
+    //There are 3 scenarios depending on how many children the deleted node will have
+    private Node deleteNode(Node current, int value) {
+        if (current == null) {
+            return null;
+        }
+
+        //THE part of the method that deletes a node
+        if (value == current.value) {
+            if (current.leftChild == null && current.rightChild == null) {
+                return null;
+            }
+
+            //current node has one children
+            if (current.leftChild == null && current.rightChild != null) {
+                return current.rightChild;
+            } else if (current.rightChild == null && current.leftChild != null) {
+                return current.leftChild;
+            }
+
+            //current node has two children
+            if (current.leftChild != null && current.rightChild != null) {
+                int successor = current.findSuccessor(current);
+                current.value = successor;
+                current.rightChild = deleteNode(current.rightChild, successor);
+                return current;
+            }
+        }
+
+        if (value < current.value) {
+            current.leftChild = deleteNode(current.leftChild, value);
+        } else if (value > current.value) {
+            current.rightChild = deleteNode(current.rightChild, value);
+        } else {
+            // value already exists
+            return current;
+        }
+        return current;
+    }
+
+    //Method that starts the deleteNode process from the root
+    private void deleteNode(int value) {
+        root = deleteNode(root, value);
+    }
+
+    @Test
+    public void deleteNodeTest() {
+        BinaryTree testBT = createBST();
+
+        //Test deleting node no children
+        assertTrue(testBT.containsNode(9));
+        testBT.deleteNode(9);
+        assertFalse(testBT.containsNode(9));
+
+        //Test deleting node two children
+        assertTrue(testBT.containsNode(8));
+        testBT.deleteNode(8);
+        assertFalse(testBT.containsNode(8));
     }
 
 }
