@@ -2,6 +2,7 @@ package com.example.simplemathapp;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 int result = num1 + num2;
 
                 resultTextView.setText(""+result);
+                resultTextView.onEditorAction(EditorInfo.IME_ACTION_DONE); // Dismisses keyboard after results shown
             }
         });
     }
