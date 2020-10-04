@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button addButton = (Button) findViewById(R.id.addButton);
+        Button subButton = (Button) findViewById(R.id.subButton);
+        Button divButton = (Button) findViewById(R.id.divButton);
+        Button mulButton = (Button) findViewById(R.id.mulButton);
+
         final EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText);
         final EditText secondNumEditText = (EditText) findViewById(R.id.SecondNumEditText);
         final TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
@@ -33,5 +37,46 @@ public class MainActivity extends AppCompatActivity {
                 resultTextView.onEditorAction(EditorInfo.IME_ACTION_DONE); // Dismisses keyboard after results shown
             }
         });
+
+        subButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int num1 = Integer.parseInt(firstNumEditText.getText().toString()); //Convert the text in EditText then convert it to String then convert it to integer
+                int num2 = Integer.parseInt(secondNumEditText.getText().toString());
+
+                int result = num1 - num2;
+
+                resultTextView.setText(""+result);
+                resultTextView.onEditorAction(EditorInfo.IME_ACTION_DONE); // Dismisses keyboard after results shown
+            }
+        });
+
+        divButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int num1 = Integer.parseInt(firstNumEditText.getText().toString()); //Convert the text in EditText then convert it to String then convert it to integer
+                int num2 = Integer.parseInt(secondNumEditText.getText().toString());
+
+                int result = num1 / num2;
+
+                resultTextView.setText(""+result);
+                resultTextView.onEditorAction(EditorInfo.IME_ACTION_DONE); // Dismisses keyboard after results shown
+            }
+        });
+
+        mulButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int num1 = Integer.parseInt(firstNumEditText.getText().toString()); //Convert the text in EditText then convert it to String then convert it to integer
+                int num2 = Integer.parseInt(secondNumEditText.getText().toString());
+
+                int result = num1 * num2;
+
+                resultTextView.setText(""+result);
+                resultTextView.onEditorAction(EditorInfo.IME_ACTION_DONE); // Dismisses keyboard after results shown
+            }
+        });
+
+
     }
 }
