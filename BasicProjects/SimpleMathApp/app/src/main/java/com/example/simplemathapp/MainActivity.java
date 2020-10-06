@@ -1,12 +1,12 @@
 package com.example.simplemathapp;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,35 +24,33 @@ public class MainActivity extends AppCompatActivity {
         Button mulButton = (Button) findViewById(R.id.mulButton);
 
         Button aboutButton = (Button) findViewById(R.id.aboutButton);
-        Button realCalculatorButton = (Button) findViewById(R.id.realCalculatorButton);
+        Button listButton = (Button) findViewById(R.id.listButton);
+        
+        ListView myListView = (ListView) findViewById(R.id.myListView);
 
         final EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText);
         final EditText secondNumEditText = (EditText) findViewById(R.id.SecondNumEditText);
         final TextView resultTextView = (TextView) findViewById(R.id.resultTextView);
 
-        // Launches an activity
+        // Launches the 'About' activity
         aboutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startIntent = new Intent(getApplicationContext(), AboutPage.class);
-                startIntent.putExtra("package name", "Will this simple calculator work? Find out on tonight's 6-o-clock news! Based off of: https://www.youtube.com/watch?v=6ow3L39Wxmg&list=WL&index=1&t=1439s&ab_channel=BillButterfield");
-                startActivity(startIntent);
+                Intent aboutPageIntent = new Intent(getApplicationContext(), AboutPage.class);
+                aboutPageIntent.putExtra("package name", "Will this simple calculator work? Find out on tonight's 6-o-clock news! Based off of: https://www.youtube.com/watch?v=6ow3L39Wxmg&list=WL&index=1&t=1439s&ab_channel=BillButterfield");
+                startActivity(aboutPageIntent);
             }
         });
 
         // Launches another application
-        realCalculatorButton.setOnClickListener(new View.OnClickListener() {
+        listButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String google = "http://www.google.com";
-                Uri webAddress = Uri.parse(google);
-
-                Intent launchGoogle = new Intent(Intent.ACTION_VIEW, webAddress); // Sends a request to the phone and asks if anyone can launch this app
-                if (launchGoogle.resolveActivity(getPackageManager()) != null) {
-                    startActivity(launchGoogle);
-                }
+                Intent listPageIntent = new Intent(getApplicationContext(), AboutPage.class);
+                startActivity(listPageIntent);
             }
         });
+
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
