@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
         Button aboutButton = (Button) findViewById(R.id.aboutButton);
         Button listButton = (Button) findViewById(R.id.listButton);
-        
-        ListView myListView = (ListView) findViewById(R.id.myListView);
 
         final EditText firstNumEditText = (EditText) findViewById(R.id.firstNumEditText);
         final EditText secondNumEditText = (EditText) findViewById(R.id.SecondNumEditText);
@@ -42,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Launches another application
+        // Launches the 'List' activity
         listButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent listPageIntent = new Intent(getApplicationContext(), AboutPage.class);
+                Intent listPageIntent = new Intent(getApplicationContext(), ListPage.class);
                 startActivity(listPageIntent);
             }
         });
@@ -103,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
                 resultTextView.onEditorAction(EditorInfo.IME_ACTION_DONE); // Dismisses keyboard after results shown
             }
         });
-
 
     }
 }
