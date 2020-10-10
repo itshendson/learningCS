@@ -2,7 +2,6 @@ package com.example.simplemathapp;
 
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +10,8 @@ public class ListPage extends AppCompatActivity {
 
     ListView myListView;
     String[] items;
+    String[] prices;
+    String[] descriptions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +21,10 @@ public class ListPage extends AppCompatActivity {
         Resources res = getResources();
         myListView = (ListView) findViewById(R.id.myListView);
         items = res.getStringArray(R.array.items); //This line refers to the items in strings.xml
+        prices = res.getStringArray(R.array.prices);
+        descriptions = res.getStringArray(R.array.description);
 
-        //Merge items (which is an array of strings with myListView) by using what is called an 'adaptor'
-        myListView.setAdapter(new ArrayAdapter<String>(this, R.layout.my_listview_detail, items));
+        //Merges items, prices, and description using adaptor
 
     }
 }
