@@ -1,16 +1,26 @@
 package com.example.simplemathapp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 public class ItemAdapter extends BaseAdapter {
 
-    LayoutInflater mInflater;
+    LayoutInflater mInflater; //LayoutInflater converts XML to Java View Objects
     String[] items;
     String[] prices;
     String[] descriptions;
+
+    //Constructor for Item Adapter
+    public ItemAdapter(Context c, String[] i, String[] p, String[] d) {
+        items = i;
+        prices = p;
+        descriptions = d;
+        mInflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    }
 
     /**
      * How many items are in the data set represented by this Adapter.
@@ -65,6 +75,20 @@ public class ItemAdapter extends BaseAdapter {
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+
+        View v = mInflater.inflate(R.layout.my_listview_detail, null); //This inflate method takes layout and a null view
+        TextView nameTextView = (TextView) v.findViewById(R.id.nameTextView);
+        TextView descriptionTextView = (TextView) v.findViewById(R.id.descriptionTextView);
+        TextView priceTextView = (TextView) v.findViewById(R.id.priceTesteView);
+
+        String name = items[position];
+        String desc = descriptions[position];
+        String cost = prices[position];
+
+        nameTextView.setText(name);
+        descriptionTextView.setText(desc);
+        priceTextView.setText(cost);
+
+        return v;
     }
 }

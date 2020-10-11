@@ -26,5 +26,8 @@ public class ListPage extends AppCompatActivity {
 
         //Merges items, prices, and description using adaptor
 
+        ItemAdapter itemAdapter = new ItemAdapter(this, items, prices, descriptions);
+        myListView.setAdapter(itemAdapter);
+
     }
 }
