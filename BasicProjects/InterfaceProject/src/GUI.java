@@ -20,6 +20,7 @@ public class GUI implements ActionListener {
         JButton myButton = new JButton("Click Me!");
         myLabel = new JLabel(("Number of clicks: 0"));
         myButton.addActionListener(this);
+        myButton.setFocusable(false); //Removes dotted line around the text of the button
 
         myPanel = new JPanel(); //This is the layout within the window
         myPanel.setBorder(BorderFactory.createEmptyBorder(30, 30, 30, 30)); //Sets the border
