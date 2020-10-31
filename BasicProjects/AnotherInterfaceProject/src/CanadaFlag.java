@@ -26,7 +26,7 @@ public class CanadaFlag extends JFrame {
         whiteMiddlePanel.setLayout(new BorderLayout()); //You need this line so that the leaf icon can be moved around
 
         // All the usual JFrame stuff but this time we'll be using setLayout
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setLayout(null);
         this.setSize(1400, 1000);
         this.setVisible(true);

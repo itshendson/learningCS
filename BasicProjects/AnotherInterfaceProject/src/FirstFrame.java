@@ -32,7 +32,7 @@ public class FirstFrame extends JFrame {
         label.setOpaque(true); //makes the background opaque so that your background color can be seen
 
         //creating the frame
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//When you click the x button, it will kill the application not just hide it
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//When you click the x button, it will kill the application not just hide it
         //this.setSize(500, 500); //sets the x and y dimensions of frame
         //this.setLayout(null);
         this.setTitle("Another Interface Project"); //Gives the frame window a name
