@@ -3,6 +3,8 @@ import java.awt.*;
 
 public class CanadaFlag extends JFrame {
 
+    CanadaFlag CanadaFlag = new CanadaFlag();
+
     CanadaFlag() {
 
         //creating label for maple leaf

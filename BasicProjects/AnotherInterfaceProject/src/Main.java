@@ -6,7 +6,8 @@ public class Main {
 
         //FirstFrame myFrame = new FirstFrame();
         //CanadaFlag myPanel = new CanadaFlag();
-        GridFrame gridFrame = new GridFrame();
+        //GridFrame gridFrame = new GridFrame();
+        MainGui mainGui = new MainGui();
 
 
     }
