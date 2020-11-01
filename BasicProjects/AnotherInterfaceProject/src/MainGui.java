@@ -39,7 +39,6 @@ public class MainGui extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if(e.getSource()==canadaFlagButton) {
-            System.out.println("Works");
             CanadaFlag window1 = new CanadaFlag();
         } else if (e.getSource()== firstFrameButton){
             FirstFrame window2 = new FirstFrame();
