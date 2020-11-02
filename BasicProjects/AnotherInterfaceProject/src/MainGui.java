@@ -7,6 +7,7 @@ public class MainGui extends JFrame implements ActionListener {
     JButton canadaFlagButton;
     JButton firstFrameButton;
     JButton gridButton;
+    JButton dinnerButton;
 
     MainGui() {
 
@@ -25,12 +26,18 @@ public class MainGui extends JFrame implements ActionListener {
         gridButton.setFocusable(false);
         gridButton.addActionListener(this);
 
+        dinnerButton = new JButton("Dinner Menu");
+        dinnerButton.setBounds(100, 250, 200, 50);
+        dinnerButton.setFocusable(false);
+        dinnerButton.addActionListener(this);
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(400, 600);
         this.setLayout(null);
         this.add(canadaFlagButton);
         this.add(firstFrameButton);
         this.add(gridButton);
+        this.add(dinnerButton);
         this.setVisible(true);
 
     }
@@ -40,10 +47,15 @@ public class MainGui extends JFrame implements ActionListener {
 
         if(e.getSource()==canadaFlagButton) {
             CanadaFlag window1 = new CanadaFlag();
-        } else if (e.getSource()== firstFrameButton){
+        }
+        else if (e.getSource()== firstFrameButton){
             FirstFrame window2 = new FirstFrame();
-        } else if (e.getSource()==gridButton) {
+        }
+        else if (e.getSource()==gridButton) {
             GridFrame window3 = new GridFrame();
+        }
+        else if (e.getSource()==dinnerButton) {
+            DinnerMenu window3 = new DinnerMenu();
         }
 
     }
