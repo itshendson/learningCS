@@ -8,6 +8,7 @@ public class MainGui extends JFrame implements ActionListener {
     JButton firstFrameButton;
     JButton gridButton;
     JButton dinnerButton;
+    JButton clickerButton;
 
     MainGui() {
 
@@ -21,7 +22,7 @@ public class MainGui extends JFrame implements ActionListener {
         firstFrameButton.setFocusable(false);
         firstFrameButton.addActionListener(this);
 
-        gridButton = new JButton("GridLayout");
+        gridButton = new JButton("Find the Treasure");
         gridButton.setBounds(100, 200, 200, 50);
         gridButton.setFocusable(false);
         gridButton.addActionListener(this);
@@ -31,12 +32,18 @@ public class MainGui extends JFrame implements ActionListener {
         dinnerButton.setFocusable(false);
         dinnerButton.addActionListener(this);
 
+        clickerButton = new JButton("Clicker");
+        clickerButton.setBounds(100, 300, 200, 50);
+        clickerButton.setFocusable(false);
+        clickerButton.addActionListener(this);
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(400, 600);
         this.setLayout(null);
         this.add(canadaFlagButton);
         this.add(firstFrameButton);
         this.add(gridButton);
+        this.add(clickerButton);
         this.add(dinnerButton);
         this.setVisible(true);
 
@@ -56,6 +63,9 @@ public class MainGui extends JFrame implements ActionListener {
         }
         else if (e.getSource()==dinnerButton) {
             DinnerMenu window3 = new DinnerMenu();
+        }
+        else if (e.getSource()==clickerButton) {
+            Clicker window4 = new Clicker();
         }
 
     }
