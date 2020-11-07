@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class MainGui extends JFrame implements ActionListener {
 
@@ -9,6 +10,14 @@ public class MainGui extends JFrame implements ActionListener {
     JButton gridButton;
     JButton dinnerButton;
     JButton clickerButton;
+
+    JMenuBar menuBar;
+    JMenu fileMenu;
+    JMenu settingMenu;
+
+    JMenuItem loadItem;
+    JMenuItem saveItem;
+    JMenuItem exitItem;
 
     MainGui() {
 
@@ -45,6 +54,31 @@ public class MainGui extends JFrame implements ActionListener {
         this.add(gridButton);
         this.add(clickerButton);
         this.add(dinnerButton);
+
+        menuBar = new JMenuBar();
+        fileMenu = new JMenu("File");
+        settingMenu = new JMenu("Setting");
+
+        loadItem = new JMenuItem("Load");
+        saveItem = new JMenuItem("Save");
+        exitItem = new JMenuItem("Exit");
+
+        loadItem.addActionListener(this);
+        saveItem.addActionListener(this);
+        exitItem.addActionListener(this);
+
+        loadItem.setMnemonic(KeyEvent.VK_L);
+        saveItem.setMnemonic(KeyEvent.VK_S);
+        exitItem.setMnemonic(KeyEvent.VK_E);
+
+        fileMenu.add(loadItem);
+        fileMenu.add(saveItem);
+        fileMenu.add(exitItem);
+
+        menuBar.add(fileMenu);
+        menuBar.add(settingMenu);
+
+        this.setJMenuBar(menuBar);
         this.setVisible(true);
 
     }
@@ -67,6 +101,16 @@ public class MainGui extends JFrame implements ActionListener {
         else if (e.getSource()==clickerButton) {
             Clicker window4 = new Clicker();
         }
+        else if (e.getSource()==loadItem) {
+            System.out.println("State Loaded");
+        }
+        else if (e.getSource()==saveItem) {
+            System.out.println("State Saved");
+        }
+        else if (e.getSource()==exitItem) {
+            System.exit(0);
+        }
+
 
     }
 }
