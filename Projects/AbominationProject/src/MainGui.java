@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -11,6 +12,7 @@ public class MainGui extends JFrame implements ActionListener {
     JButton gridButton;
     JButton dinnerButton;
     JButton clickerButton;
+    JButton frameDragNDropButton;
 
     JMenuBar menuBar;
     JMenu fileMenu;
@@ -19,7 +21,6 @@ public class MainGui extends JFrame implements ActionListener {
     JMenuItem loadItem;
     JMenuItem saveItem;
     JMenuItem exitItem;
-
 
     MainGui() {
 
@@ -48,6 +49,11 @@ public class MainGui extends JFrame implements ActionListener {
         clickerButton.setFocusable(false);
         clickerButton.addActionListener(this);
 
+        frameDragNDropButton = new JButton("Drag and Drop");
+        frameDragNDropButton.setBounds(100, 350, 200, 50);
+        frameDragNDropButton.setFocusable(false);
+        frameDragNDropButton.addActionListener(this);
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(400, 600);
         this.setLayout(null);
@@ -56,6 +62,7 @@ public class MainGui extends JFrame implements ActionListener {
         this.add(gridButton);
         this.add(clickerButton);
         this.add(dinnerButton);
+        this.add(frameDragNDropButton);
 
         menuBar = new JMenuBar();
         fileMenu = new JMenu("File");
@@ -117,6 +124,9 @@ public class MainGui extends JFrame implements ActionListener {
         }
         else if (e.getSource()==exitItem) {
             System.exit(0);
+        }
+        else if (e.getSource()==frameDragNDropButton) {
+            FrameDragNDrop window5 = new FrameDragNDrop();
         }
 
 
