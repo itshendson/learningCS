@@ -13,6 +13,7 @@ public class MainGui extends JFrame implements ActionListener {
     JButton dinnerButton;
     JButton clickerButton;
     JButton frameDragNDropButton;
+    JButton spaceShipButton;
 
     JMenuBar menuBar;
     JMenu fileMenu;
@@ -54,6 +55,11 @@ public class MainGui extends JFrame implements ActionListener {
         frameDragNDropButton.setFocusable(false);
         frameDragNDropButton.addActionListener(this);
 
+        spaceShipButton = new JButton("Space Journey");
+        spaceShipButton.setBounds(100, 400, 200, 50);
+        spaceShipButton.setFocusable(false);
+        spaceShipButton.addActionListener(this);
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(400, 600);
         this.setLayout(null);
@@ -62,6 +68,7 @@ public class MainGui extends JFrame implements ActionListener {
         this.add(gridButton);
         this.add(clickerButton);
         this.add(dinnerButton);
+        this.add(spaceShipButton);
         this.add(frameDragNDropButton);
 
         menuBar = new JMenuBar();
@@ -127,6 +134,9 @@ public class MainGui extends JFrame implements ActionListener {
         }
         else if (e.getSource()==frameDragNDropButton) {
             FrameDragNDrop window5 = new FrameDragNDrop();
+        }
+        else if (e.getSource() == spaceShipButton) {
+            Spaceship window6 = new Spaceship();
         }
 
 

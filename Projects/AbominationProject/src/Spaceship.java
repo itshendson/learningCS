@@ -3,14 +3,14 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class MainFrame extends JFrame implements KeyListener {
+public class Spaceship extends JFrame implements KeyListener {
 
     JLabel label;
     ImageIcon shuttle;
 
-    MainFrame() {
+    Spaceship() {
 
-        shuttle = new ImageIcon("C:\\Users\\Hendson-Desktop\\Desktop\\Personal\\Projects\\learningCS\\Projects\\Spaceship Game\\res\\icons8-space-shuttle-64.png");
+        shuttle = new ImageIcon("C:\\Users\\Hendson-Desktop\\Desktop\\Personal\\Projects\\learningCS\\Projects\\AbominationProject\\src\\resources\\icons8-space-shuttle-64.png");
 
         label = new JLabel();
         label.setBounds(310,650,100,100);
@@ -23,7 +23,7 @@ public class MainFrame extends JFrame implements KeyListener {
 
         this.getContentPane().setBackground(Color.BLACK);
         this.add(label);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setSize(700,800);
         this.setResizable(false);
         this.setLayout(null);
