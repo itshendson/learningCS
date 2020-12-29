@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    color:lightblue;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem; 
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: whitesmoke;
+    min-height: 35px;
+    //border: 1px solid #223445;
+    border-radius: 18px;
+}
+
+form input {
+    min-width: 330px;
+}
+
+form button {
+    color: #00AAFF;
+    background: lightgrey;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    color: #003e5e;
+    background: grey;
+}
