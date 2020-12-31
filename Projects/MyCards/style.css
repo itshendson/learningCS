@@ -28,7 +28,6 @@ form input, form button {
     border: none;
     background: whitesmoke;
     min-height: 35px;
-    //border: 1px solid #223445;
     border-radius: 18px;
 }
 
@@ -47,3 +46,51 @@ form button:hover {
     color: #003e5e;
     background: grey;
 }
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 40%;
+    list-style: none;
+}
+
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .complete-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 18px;
+}
+
+.trash-btn:hover, .complete-btn:hover {
+    font-size: 1.1rem;
+}
+
+.trash-btn:active, .complete-btn:active {
+    font-size: 1.1rem;
+}
+
+.card-item {
+    padding: 0rem .5rem;
+}
+

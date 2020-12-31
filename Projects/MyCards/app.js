@@ -5,6 +5,7 @@ const cardList = document.querySelector('.todo-list');
 
 //Event Listeners
 cardButton.addEventListener('click', addCard);
+trashButton.addEventListener('click', deleteCard);
 
 //Functions
 function addCard(event) {
@@ -17,8 +18,8 @@ function addCard(event) {
 
     //Create <Li>
     const cardLi = document.createElement('li');
-    cardLi.innerText = 'the first card';
-    cardLi.classList.add('todo-item');
+    cardLi.innerText = cardInput.value;
+    cardLi.classList.add('card-item');
     cardDiv.appendChild(cardLi);
 
     //Create Edit button
@@ -30,9 +31,17 @@ function addCard(event) {
     //Create Delete button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
-    trashButton.classList.add("complete-btn");
+    trashButton.classList.add("trash-btn");
     cardDiv.appendChild(trashButton);
 
     //Append the cardDiv
     cardList.appendChild(cardDiv);
+
+    cardInput.value = ""
+}
+
+function deleteCard(event) {
+    event.preventDefault();
+
+    
 }
