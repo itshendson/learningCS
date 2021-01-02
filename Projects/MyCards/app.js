@@ -5,7 +5,7 @@ const cardList = document.querySelector('.todo-list');
 
 //Event Listeners
 cardButton.addEventListener('click', addCard);
-trashButton.addEventListener('click', deleteCard);
+cardList.addEventListener('click', editOrDelete);
 
 //Functions
 function addCard(event) {
@@ -25,7 +25,7 @@ function addCard(event) {
     //Create Edit button
     const editButton = document.createElement('button');
     editButton.innerHTML = '<i class="fas fa-pencil-alt"></i>';
-    editButton.classList.add("complete-btn");
+    editButton.classList.add("edit-btn");
     cardDiv.appendChild(editButton);
 
     //Create Delete button
@@ -40,8 +40,16 @@ function addCard(event) {
     cardInput.value = ""
 }
 
-function deleteCard(event) {
-    event.preventDefault();
-
+function editOrDelete(e) {
+    const item = e.target;
     
+    if (item.classList[0] === "trash-btn") {
+        const cardParent = item.parentElement;
+        cardParent.remove();
+    }
+
+    if (item.classList[0 === "edit-btn"]) {
+        console.log("Edit function implementation here")
+    }
+
 }
