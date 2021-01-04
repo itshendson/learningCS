@@ -1,7 +1,7 @@
 //Selectors
-const cardInput = document.querySelector('.card-input');
-const cardButton = document.querySelector('.card-button');
-const cardList = document.querySelector('.card-list');
+const cardInput = document.querySelector('.todo-input');
+const cardButton = document.querySelector('.todo-button');
+const cardList = document.querySelector('.todo-list');
 
 //Event Listeners
 cardButton.addEventListener('click', addCard);
@@ -15,7 +15,7 @@ function addCard(event) {
 
     //Create <Div>
     const cardDiv = document.createElement('div');
-    cardDiv.classList.add('card');
+    cardDiv.classList.add('todo');
 
     //Create <Li>
     const cardLi = document.createElement('li');
@@ -84,7 +84,7 @@ function loadCards() {
     cards.forEach(function(card) {
         //Create <Div>
         const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card');
+        cardDiv.classList.add('todo');
 
         //Create <Li>
         const cardLi = document.createElement('li');

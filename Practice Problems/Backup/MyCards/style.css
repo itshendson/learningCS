@@ -48,19 +48,19 @@ form button:hover {
     background: grey;
 }
 
-.card-container {
+.todo-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card-list {
+.todo-list {
     min-width: 40%;
     list-style: none;
 }
 
 
-.card {
+.todo {
     margin: 0.5rem;
     background: white;
     color: black;
@@ -71,7 +71,7 @@ form button:hover {
     border-radius: 18px;
 }
 
-.card li {
+.todo li {
     flex: 1;
 }
 
