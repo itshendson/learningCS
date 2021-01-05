@@ -7,7 +7,7 @@
 body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
     color:lightblue;
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     min-height: 100vh;
 }
 

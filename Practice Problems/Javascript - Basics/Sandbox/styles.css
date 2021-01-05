@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    color:black;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: flex-start;
+}
+
+.container-1 div {
+    border:10px #cccccc solid;
+    padding:5px;
+}
+
+.box-1 {
+    min-height: 25vh;
+    max-width: 33%;
+    background-color: #cccccc;
+    margin: 10px;
+    padding:2px;
+    padding-top:0px;
+    border:2px black solid;
+    flex-grow: 3;
+}
+
+h1 {
+    margin-left: 8px;
+}
+
+p {
+    margin-left: 5px;
+}
