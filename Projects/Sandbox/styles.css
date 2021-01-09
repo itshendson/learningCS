@@ -8,13 +8,12 @@ header {
     justify-content: center;
 }
 
-button {
-    background: rgba(0, 0, 0, 0);
+.create-button {
+    background: rgba(255, 255, 255, 0);
     border: none;
-    font-size: 3rem;
+    font-size: 8rem;
     cursor: pointer;
-    justify-content: center;
-    justify-items: center;
+    border-radius: 25px;
 }
 
 body {
