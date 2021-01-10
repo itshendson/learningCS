@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:left;
+    justify-content:center;
     align-items: flex-start;
 }
 
@@ -40,6 +40,17 @@ body {
     padding:2px;
     padding-top:0px;
     opacity: 0.5;
+}
+
+.noto {
+    border:8px #cccccc solid;
+    border-radius: 25px;
+    height: auto;
+    max-width: 30%;
+    background-color: white;
+    padding:18px;
+    opacity: 0.5;
+    outline: none;
 }
 
 h1 {
