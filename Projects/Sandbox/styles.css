@@ -1,45 +1,28 @@
 * {
     font-family: 'Varela Round', sans-serif;
+    margin:0;
+    padding:0;
 }
 
-header {
-    font-size: 1.5rem;
-    display: flex;
+.navbar-container {
+    overflow: hidden;
+    position: fixed;
+    background-color: #cccccc;
+    top: 0;
+    width: 100%;
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+form {
+    display:flex;
     justify-content: center;
-}
-
-.create-button {
-    background: rgba(255, 255, 255, 0);
-    border: none;
-    font-size: 8rem;
-    cursor: pointer;
-    border-radius: 25px;
 }
 
 body {
     background: linear-gradient(to right, #00AAFF, #00FF6C);
     color:black;
-    min-height: 100vh;
-}
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: flex-start;
-}
-
-.container div {
-    border:7px #cccccc solid;
-    border-radius: 25px;
-    height: auto;
-    max-width: 30%;
-    background-color: white;
-    padding:10px;
-    margin:10px;
-    padding:2px;
-    padding-top:0px;
-    opacity: 0.5;
+    margin-top: 80px;
 }
 
 .noto {
@@ -55,6 +38,10 @@ body {
 
 h1 {
     margin: 20px;
+}
+
+h3 {
+    margin-left: 10px;
 }
 
 p {
