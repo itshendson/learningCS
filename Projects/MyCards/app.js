@@ -13,6 +13,8 @@ function addCard(event) {
 
     event.preventDefault();
 
+    console.log("hi")
+
     //Create <Div>
     const cardDiv = document.createElement('div');
     cardDiv.classList.add('card');
@@ -47,6 +49,7 @@ function addCard(event) {
 //Function for Edit and Delete
 function editOrDelete(e) {
     const item = e.target;
+    console.log(item);
     
     if (item.classList[0] === "trash-btn") {
         const cardParent = item.parentElement;
@@ -79,6 +82,7 @@ function loadCards() {
         cards = [];
     } else {
         cards = JSON.parse(localStorage.getItem("cards"));
+        console.log(cards);
     }
     
     cards.forEach(function(card) {
