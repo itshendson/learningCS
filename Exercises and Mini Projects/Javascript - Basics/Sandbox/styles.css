@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.a-header {
+    background-color: cyan;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container {
+    background-color: lightslategray;
+    height: 600px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.left-hand {
+    background-color: red;
+    position: relative;
+    top: 25%;
+    height: 300px;
+    width: 300px;
+    left: 10%;
+}
+
+.right-hand {
+    background-color: blue;
+    position: relative;
+    top: 0%;
+    height: 300px;
+    width: 300px;
+    left: 70%;
+}
