@@ -1,9 +1,7 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
     "ignore": [
-      "app.ts",
-      "modal.ts",
       "firebase.json",
       "**/.*",
       "**/node_modules/**"

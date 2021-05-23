@@ -23,6 +23,7 @@ class Timer {
     editModal: HTMLDivElement;
     inputForEditModal: HTMLInputElement;
     buttonForEditModal: HTMLButtonElement;
+    descriptionEditModal: HTMLParagraphElement;
     
 
     constructor(id: number, title: string, parent: HTMLElement) {
